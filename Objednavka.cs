@@ -84,8 +84,27 @@ public class Objednavka: IOrder
         }
     }
 
-    public string Country { get; }
+    public string Country
+    {
+        get
+        {
+            return Adresa.Zeme;
+        }
+    }
+
     public string[] Products { get; }
     public int[] Quantities { get; }
-    public double[] Prices { get; }
+    private double cena;
+
+    public double[] Prices
+    {
+        get
+        {
+            return new[] { cena };
+        }
+        set
+        {
+            cena = Produkt.Cena;
+        }
+    }
 }

@@ -8,6 +8,18 @@ public class Adresa
     public string Mesto { get; }
     public int SmerovaciCislo { get; }
 
+    public string Zeme
+    {
+        get
+        {
+            return Zeme;
+        }
+       private set
+        {
+            Zeme = "Česká republika";
+        }
+    }
+
     public Adresa(string ulice, int cisloDomu, int cisloUlice, string mesto, int smerovaciCislo)
     {
         Ulice = ulice;
