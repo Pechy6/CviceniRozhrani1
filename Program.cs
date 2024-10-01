@@ -2,7 +2,9 @@
 
 using JednoduchyPriklad;
 
-Console.WriteLine("Hello, World!");
-
-Adress adress = new Adress("Ve svahu", 10,2,"Praha", 1000);
-Console.WriteLine(adress);
+Console.WriteLine("Welcome to CviceniRozhrani");
+Zakaznik zakaznik = new Zakaznik(1,"Patrik", "Pech");
+Adresa adresa = new Adresa("Stritez", 159, 1, "Jihlava", 58811);
+Produkt produkt = new Produkt("Airpods Pro", "Airpods Pro 2 generace nejlepsich sluchatek na svete");
+Objednavka objednavka = new Objednavka(1, produkt, zakaznik);
+Console.WriteLine(objednavka.FirstName);
