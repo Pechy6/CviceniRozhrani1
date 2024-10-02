@@ -2,21 +2,21 @@
 
 public class Zakaznik
 {
-    public int Cislo { get; }
+    public int Id { get; private set; }
     public string Jmeno { get; }
     public string Prijmeni { get; }
 
     Adresa Adresa { get; } // zatim nechapu jak a proc
 
-    public Zakaznik(int cislo, string jmeno, string prijmeni)
+    public Zakaznik(int id, string jmeno, string prijmeni)
     {
-        Cislo = cislo;
+        Id = id;
         Jmeno = jmeno;
         Prijmeni = prijmeni;
     }
 
     public override string ToString()
     {
-        return Cislo + ", " + Jmeno + ", " + Prijmeni;
+        return Id + ", " + Jmeno + ", " + Prijmeni;
     }
 }

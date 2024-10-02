@@ -2,6 +2,8 @@
 
 public class Adresa
 {
+    private string zeme;
+    
     public string Ulice { get; }
     public int CisloDomu { get; }
     public int CisloUlice { get; }
@@ -12,11 +14,11 @@ public class Adresa
     {
         get
         {
-            return Zeme;
+            return zeme;
         }
        private set
         {
-            Zeme = "Česká republika";
+            zeme = "Česká republika";
         }
     }
 

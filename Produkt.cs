@@ -2,12 +2,14 @@
 
 public class Produkt
 {
-    string Nazev { get; }
-     string Popis { get; }
-    public double Cena { get; }
+    public int Id { get; private set; }
+    public string Nazev { get; private set; }
+    public string Popis { get; private set; }
+    public double Cena { get; private set; }
 
     public Produkt(string nazev, string popis, double cena)
     {
+        Id += 1;
         Nazev = nazev;
         Popis = popis;
         Cena = cena;

@@ -37,7 +37,7 @@ public interface IOrder
     /// <summary>
     /// Gets the zip code associated with the order's delivery address.
     /// </summary>
-    string ZipCode { get; }
+    int Zip { get; }
 
     /// <summary>
     /// Gets the name of the country associated with the order.
