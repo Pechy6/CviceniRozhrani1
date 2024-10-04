@@ -1,12 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//See https://aka.ms/new-console-template for more information
 
 using JednoduchyPriklad;
 
 Console.WriteLine("Welcome to CviceniRozhrani");
-Zakaznik zakaznik = new Zakaznik(1, "Patrik", "Pech");
-Adresa adresa = new Adresa("Stritez", 159, 1, "Jihlava", 58811);
-Produkt produkt = new Produkt("Airpods Pro", "Airpods Pro 2 generace nejlepsich sluchatek na svete", 249);
-Objednavka objednavka = new Objednavka(1, produkt, zakaznik, adresa);
+Zakaznik zakaznik = new Zakaznik(1, "Tomáš", "Marný");
+Adresa adresa = new Adresa("Ve Svahu", 10, 2, "Praha", 10000);
+Produkt produkt = new Produkt("Body pro ITnetwork.cz",
+    "Body pro zpřístupnění prémiového obsahu a dosažení vašeho vysněného zaměstnání v IT.", 239);
+Objednavka objednavka = new Objednavka(1, produkt, zakaznik, adresa, adresa);
 Gateway brana = new Gateway();
 brana.ProcessOrder(objednavka);
 

@@ -2,12 +2,32 @@
 
 public class Zakaznik
 {
-    public int Id { get; private set; }
+    /// <summary>
+    /// Id zakaznika 
+    /// </summary>
+    public int Id { get; set; }
+
+    /// <summary>
+    /// Jmeno zakaznika
+    /// </summary>
     public string Jmeno { get; }
+
+    /// <summary>
+    /// Prijmeni zakaznika
+    /// </summary>
     public string Prijmeni { get; }
 
-    Adresa Adresa { get; } // zatim nechapu jak a proc
+    /// <summary>
+    /// Pristup ke tride Adresa
+    /// </summary>
+    Adresa Adresa { get; } // zatim nechapu ucel 
 
+    /// <summary>
+    /// Instance zakaznika
+    /// </summary>
+    /// <param name="id">Id</param>
+    /// <param name="jmeno">Jmeno</param>
+    /// <param name="prijmeni">Prijmeni</param>
     public Zakaznik(int id, string jmeno, string prijmeni)
     {
         Id = id;
